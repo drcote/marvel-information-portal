@@ -3,7 +3,7 @@ import Spinner from '../spinner/Spinner';
 import ErrorMessage from '../errorMessage/ErrorMessage';
 import MarvelService from '../../services/MarvelService';
 import './charList.scss';
-//import abyss from '../../resources/img/abyss.jpg';
+import PropTypes from 'prop-types';
 
 class CharList extends Component {
     state = {
@@ -112,6 +112,10 @@ class CharList extends Component {
             </div>
         )
     }
+}
+
+CharList.propTypes={
+    onCharSelected: PropTypes.func
 }
 
 export default CharList;
